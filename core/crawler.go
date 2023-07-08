@@ -213,15 +213,15 @@ func NewCrawler(site *url.URL, cmd *cobra.Command) *Crawler {
 		output = NewOutput(outputFolder, filename)
 	}
 
-	// Init Length Filter
+	// Init Lenght Filter
     filterLength_slice := []int{}
 	filterLength, _ := cmd.Flags().GetString("filter-length")
 
 	if filterLength != "" {
 
-		lengthArgs := strings.Split(filterLength, ",")
-		for i:=0; i < len(lengthArgs);i++ {
-			if i, err := strconv.Atoi(lengthArgs[i]); err == nil {
+		lenghtArgs := strings.Split(filterLength, ",")
+		for i:=0; i < len(lenghtArgs);i++ {
+			if i, err := strconv.Atoi(lenghtArgs[i]); err == nil {
 				filterLength_slice = append(filterLength_slice,i)
 			}
 		}
