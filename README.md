@@ -16,7 +16,7 @@
 
 ### GO install
 ```
-GO111MODULE=on go install github.com/jaeles-project/gospider@latest
+GO111MODULE=on go get -u github.com/jaeles-project/gospider
 ```
 
 ### Docker
